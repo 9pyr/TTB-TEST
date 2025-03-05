@@ -31,6 +31,9 @@ public class Choice {
   @JsonBackReference
   private SurveyInput surveyInput;
 
+  public Choice() {
+  }
+
   public Choice(String title, String value) {
     this.title = title;
     this.value = value;

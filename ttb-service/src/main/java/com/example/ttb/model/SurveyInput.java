@@ -39,6 +39,9 @@ public class SurveyInput {
   @JsonManagedReference
   private List<Setting> settings = new ArrayList<>();
 
+  public SurveyInput() {
+  }
+
   public SurveyInput(String type, String title) {
     this.type = type;
     this.title = title;

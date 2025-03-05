@@ -1,6 +1,7 @@
 "use client"
 
 import Layout from "@/components/Layout"
+import SurveyStep from "@/components/SurveyStep"
 import { SurveyModel } from "@/core/apis/types"
 import { Step } from "@/core/constants"
 import useGetSurvey from "@/core/hooks/useGetSurvey"
@@ -12,7 +13,6 @@ import { Button } from "antd"
 import { useForm } from "antd/es/form/Form"
 import { redirect } from "next/navigation"
 import { useState } from "react"
-import SurveyStep from "../components/SurveyStep"
 
 const SurveyApp = () => {
   const [step, setStep] = useState(Step.Rank)

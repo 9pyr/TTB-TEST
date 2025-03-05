@@ -20,8 +20,6 @@ const useGetSurvey = (form: FormInstance) => {
         data = await getSurveyById(seq)
       }
 
-      console.log("🔥", data)
-
       form.setFieldsValue(data)
 
       return data

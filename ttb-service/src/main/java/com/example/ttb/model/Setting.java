@@ -32,6 +32,9 @@ public class Setting {
                      // serialize ข้อมูล JSON
   private SurveyInput surveyInput;
 
+  public Setting() {
+  }
+
   public Setting(String key, String value) {
     this.key = key;
     this.value = value;

@@ -25,6 +25,9 @@ public class Survey {
   @Column(columnDefinition = "NVARCHAR(100)")
   private String feedbackComments;
 
+  public Survey() {
+  }
+
   public Survey(String serviceSatisfaction, String improvementSuggestion, String feedbackComments) {
     this.serviceSatisfaction = serviceSatisfaction;
     this.improvementSuggestion = improvementSuggestion;
